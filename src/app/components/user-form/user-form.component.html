@@ -1,0 +1,20 @@
+<div class="container mt-4">
+  <h2>{{ isEdit ? 'Edit' : 'Add' }} User</h2>
+  <form (ngSubmit)="submitForm()">
+    <div class="mb-3">
+      <label>Name</label>
+      <input [(ngModel)]="user.name" name="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Email</label>
+      <input [(ngModel)]="user.email" name="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Phone</label>
+      <input [(ngModel)]="user.phone" name="phone" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a routerLink="/" class="btn btn-secondary ms-2">Cancel</a>
+  </form>
+</div>
+
