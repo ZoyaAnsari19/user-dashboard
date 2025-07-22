@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-user-form',
-  imports: [],
+  imports: [CommonModule, FormsModule],
   templateUrl: './user-form.component.html',
   styleUrls: ['./user-form.component.css']
 })

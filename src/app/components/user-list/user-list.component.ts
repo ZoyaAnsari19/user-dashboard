@@ -1,9 +1,11 @@
 import { Component , OnInit} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-user-list',
-  imports: [],
+  imports: [CommonModule, RouterModule],
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.css']
 })
@@ -29,6 +31,4 @@ export class UserList implements OnInit {
       });
     }
   }
-} {
-
 }
